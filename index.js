@@ -1,12 +1,16 @@
 // Write your code here!
 
 const main = document.getElementById("main")
-Element.classList.remove("main")
+main.remove("main")
 
-const newHeader = document.createElement("h1")
+
+const newHeader = document.createElement("h1") 
+
+const victory = document.createElement("victory")
+
+newHeader.append(victory)
 
 document.body.append(newHeader)
 
-newHeader.classList.add("victory")
 
-newHeader.textContent = "DEVIN is the champion"
+victory.textContent = "DEVIN is the champion"
